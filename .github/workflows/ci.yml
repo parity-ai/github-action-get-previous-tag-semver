@@ -39,7 +39,7 @@ jobs:
         uses: therussiankid92/gat@v1
         with:
           assertion: should.equal
-          expected: 1.8.38
+          expected: 1.9.1
           actual: ${{ steps.previoustag.outputs.tag }}
   get-previous-tag:
     name: Test Get Previous Tag on ${{ matrix.os }}
@@ -67,7 +67,7 @@ jobs:
         uses: therussiankid92/gat@v1
         with:
           assertion: should.equal
-          expected: v1
+          expected: v1.0.1
           actual: ${{ steps.previoustag.outputs.tag }}
       - name: Add tag with prefix
         run: |
